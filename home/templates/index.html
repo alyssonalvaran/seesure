@@ -28,8 +28,10 @@
 <body data-spy="scroll" data-target="#navbar">
 
     <!-- Navbar -->
-	<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-		<a class="navbar-brand" href="#">SeeSure</a>
+	<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+		<a class="navbar-brand" href="#">
+            <img src="{% static 'img/seesure.png' %}" height="30" alt="seesure">      
+        </a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -47,12 +49,16 @@
 	</nav>
 
     <!-- Home -->
-    <header class="masthead d-flex">
+    <header class="masthead d-flex bg-seesure-blue text-center">
         <div class="container text-center my-auto">
             <div class="row">
                 <div class="col-sm-12 col-lg-6 py-4 my-auto">
-                    <h2>SeeSure</h2>
-                    <p>Towards the future.</p>
+                    <p class="lead">
+                        <strong>SeeSure</strong> is a mobile application<br/>
+                        that allows patients with<br/>
+                        epilepsy manage their seizures
+                        <br/>and health better.
+                    </p>
                 </div>
                 <div class="col-sm-12 col-lg-6">
                     <div class="video-wrapper">
@@ -65,37 +71,52 @@
     </header>
 
     <!-- Features -->
-    <section id="features" class="content-section">
+    <section id="features" class="content-section bg-seesure-light text-center">
         <div class="container">
             <div class="row">
-                <div class="col-12 py-4">
+                <div class="col-12 py-4 color-seesure-dark-blue">
                     <h2>What It Does</h2>
                 </div>
                 <div class="col-sm-12 col-lg-9 mx-auto py-4">
-                    <img src="{% static 'img/features.jpg' %}" width="100%" alt="features">
+                    <img src="{% static 'img/features-1.png' %}" width="100%" alt="features">
+                </div>
+                <div class="col-sm-12 col-lg-9 mx-auto py-4">
+                    <p class="color-seesure-dark-blue lead">
+                        The application is able to monitor the health condition of the patient through the data from the Seizure Diary and sensor data from a smartwatch. Using a specialized algorithm it also aims to detect and predict seizure occurrences. Once a seizure is detected, emergency mode will be activated.
+                    </p>
+                </div>
+                <div class="col-sm-12 col-lg-9 mx-auto py-4">
+                    <img src="{% static 'img/features-2.png' %}" width="100%" alt="features">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Process -->
-    <section id="process" class="content-section">
+    <section id="process" class="content-section bg-seesure-blue text-center">
         <div class="container">
             <div class="row">
                 <div class="col-12 py-4">
                     <h2>How It Works</h2>
                 </div>
-                <div class="col-sm-12 col-lg-8 mx-auto py-4">
-                    <img src="{% static 'img/process.jpg' %}" width="100%" alt="features">
+                <div class="col-2 mx-auto py-4">
+                    <img src="{% static 'img/process-1.png' %}" width="100%" alt="features">
                 </div>
-                <div class="col-sm-12 col-lg-6 py-2">
-                    <a class="btn btn-outline-secondary btn-block" href="https://projects.invisionapp.com/prototype/ck2m5i4sn00cyca018ejnm20k/play" role="button" target="_blank">
-                        Check out our mobile app wireframes
+                <div class="col-10 mx-auto py-4">
+                    <img src="{% static 'img/process-2.png' %}" width="100%" alt="features">
+                </div>
+                <div class="col-sm-12 col-lg-6 py-2 mx-auto">
+                    <a class="btn btn-light btn-block" href="#" role="button">
+                        Check out how we handle and analyze data
                     </a>
                 </div>
-                <div class="col-sm-12 col-lg-6 py-2">
-                    <a class="btn btn-outline-secondary btn-block" href="#" role="button">
-                        Check out how we handle and analyze data
+
+                <div class="col-12 mx-auto py-4">
+                    <img src="{% static 'img/process-3.png' %}" width="100%" alt="features">
+                </div>
+                <div class="col-sm-12 col-lg-6 py-2 mx-auto">
+                    <a class="btn btn-light btn-block" href="https://projects.invisionapp.com/prototype/ck2m5i4sn00cyca018ejnm20k/play" role="button" target="_blank">
+                        Check out our mobile app wireframes
                     </a>
                 </div>
             </div>
@@ -106,7 +127,7 @@
     <section id="team" class="content-section">
         <div class="container">
             <div class="row">
-                <div class="col-12 py-4">
+                <div class="col-12 py-4 text-center color-seesure-dark-blue">
                     <h2>Who We Are</h2>
                 </div>
                 <div class="col-12">
@@ -118,7 +139,7 @@
                                 </div>
                                     <div class="col-8">
                                     <div class="card-body">
-                                        <h5 class="card-title">Alysson Alvaran</h5>
+                                        <h5 class="card-title color-seesure-dark-blue">Alysson Alvaran</h5>
                                         <p class="card-text">Software Engineer. Python Tech Lead at Women Who Code Manila. Board Member at Python Philippines.</p>
                                         <small class="text-muted">
                                             <a class="card-text" href="http://alyssonalvaran.com/" target="_blank">Personal Website</a> | 
@@ -137,9 +158,10 @@
                                 </div>
                                     <div class="col-8">
                                     <div class="card-body">
-                                        <h5 class="card-title">Ella Lazaro</h5>
-                                        <p class="card-text">Psychometrician. UX Researcher at Center for Human Interface Systems, Seoul National University.</p>
+                                        <h5 class="card-title color-seesure-dark-blue">Ella Lazaro (엘라)</h5>
+                                        <p class="card-text">Psychometrician. Cognitive Science and UX Researcher at Human Interface Systems Lab, Seoul National University.</p>
                                         <small class="text-muted">
+                                            <a class="card-text" href="http://his.snu.ac.kr/archives/portfolio_3/lazaro-may-jorella" target="_blank">HIS Website</a> | 
                                             <a class="card-text" href="https://www.linkedin.com/in/ellalazaro/" target="_blank">LinkedIn</a> | 
                                             <a class="card-text" href="https://www.instagram.com/ellalazaro/" target="_blank">Instagram</a>
                                         </small>
@@ -154,14 +176,14 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer bg-light">
+    <footer class="footer bg-white">
         <div class="container text-center">
             <span class="text-muted">Copyright 2019. Ne-il. All Rights Reserved.</span>
         </div>
     </footer>
 
     <!-- Scroll to top button-->
-    <a href="#" class="btn btn-secondary btn-lg scroll-to-top js-scroll-trigger">
+    <a href="#" class="btn btn- text-centersecondary btn-lg scroll-to-top js-scroll-trigger">
         <i class="fas fa-chevron-up"></i>
     </a>
 

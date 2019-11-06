@@ -92,3 +92,14 @@ footer.footer {
     height: 100%;
     object-fit: cover;
 }
+
+/* Background color settings */
+
+.bg-seesure-blue {
+    background-color: #6c9eaa;
+    color: white;
+}
+
+.color-seesure-dark-blue {
+    color: #207184;
+}
